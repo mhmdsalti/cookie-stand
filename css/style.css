@@ -1,0 +1,72 @@
+* {
+    font-family: 'Indie Flower', cursive;
+  }
+  body {
+    background-color: #f3f3f3;
+  }
+  header {
+      
+      
+      
+    background-color: black;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    color: lightgoldenrodyellow;
+    text-align: center;
+  }
+  
+  
+  main {     
+      background-color: blanchedalmond;
+      
+      
+    margin: 100px ;
+  }
+  
+  main h2 {
+    margin-bottom: 10px;
+    font-size: larger;
+    font-weight: revert;
+  }
+  main section ul {
+    list-style: inside;
+  }
+  
+  img {
+    margin-top: 50px;
+   
+  }
+
+  a {
+
+    color: black;
+    font-size: 30px;
+    text-shadow: 2px 2px lightgoldenrodyellow;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 10px;
+    padding-right: 100px;
+  }
+
+  nav img {
+margin-top: 250px;
+    margin-left: 250px;
+  }
+
+  footer {
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Stalinist One', cursive;
+    text-shadow: 2px 2px black;
+    font-size: 16px;
+    color: lightgoldenrodyellow;
+    
+    background-color: black;
+    margin-top: 236px;
+    
+    text-align: right;
+  }
+
