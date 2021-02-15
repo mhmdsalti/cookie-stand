@@ -6,8 +6,8 @@
 
 
  const hours = ['6am' ,'7am','8am','9am','10am','11am','12pm ','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
- const shops = [];
- // seattle 
+ const shops = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+ 
  function getRandomNumber(min, max) {
      return Math.floor(Math.random() * (max - min + 1) + min);
     }
@@ -38,7 +38,7 @@
 
       const th0El = document.createElement('th');
       tr0El.appendChild(th0El);
-      // tableHeadingEl.setAttribute('scope', 'row');
+      
       th0El.textContent = this.name;
 
       for (let i = 0; i < hours.length; i++) {
@@ -52,7 +52,7 @@
         tr0El.appendChild(td0El);
         td0El.textContent = Math.ceil(cookies);
       }
-      shops[14] = shops[14]+Math.ceil(totalSales);
+      shops[14]+=Math.ceil(totalSales);
       const td1El = document.createElement('td');
       tr0El.appendChild(td1El);
       td1El.textContent = Math.ceil(totalSales);
@@ -80,13 +80,12 @@
     }
 
     function render1(){
-      const dom = document.getElementById('cookisShop');
+      const dom = document.getElementById('cookiesShop');
       const tr3El = document.createElement('tr');
       dom.appendChild(tr3El);
     
       const th6El = document.createElement('th');
       tr3El.appendChild(th6El);
-      // thEl.setAttribute('scope', 'row');
       th6El.textContent = 'Totals';
     
       for (let i = 0; i < shops.length; i++) {
@@ -101,7 +100,7 @@
     const paris = new CookieShop('paris', 20, 38, 2.3);
     const lima = new CookieShop('lima', 2, 16, 4.6);
 
-    render();
+render();
 seattle.render();
 tokyo.render();
 dubai.render();
