@@ -204,9 +204,11 @@ footer h3 {
   th ,
   td{
 margin-top: 200px;
-border: 3px solid black;
-
-color: black;
+border: 3px solid white;
+background-color: black;
+color: lightgreen;
+text-shadow:1px 1px lightyellow;
+font-size: x-large;
 }
 
 /* Sales page */
@@ -234,5 +236,55 @@ padding: 50px;
   font-weight: bold;
   font-size:large;
   text-align: left;
+
+}
+
+#add-store{
+
+
+  text-align: center;
+}
+
+#legend {
+
+
+  padding: 30px;
+  font-size: xx-large;
+
+
+}
+
+button{
+
+  background-color: lightgreen;
+  font-size: 12px;
+ 
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+
+#body { 
+
+
+  background-image: url('../img/coks.jpg');
+  
+    margin-top: 55px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+
+}
+
+#fl {
+
+  font-weight:bolder;
+  font-size:x-large;
 
 }

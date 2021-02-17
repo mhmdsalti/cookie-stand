@@ -106,7 +106,33 @@ tokyo.render();
 dubai.render();
 paris.render();
 lima.render();
-render1();
+
+
+
+
+const newStore= [];
+
+const formEl = document.getElementById('add-store');
+
+
+formEl.addEventListener('submit', function(event) {
+
+    event.preventDefault();
+
+    const newStore = event.target.where.value;
+    const minimumCustomers = event.target.minimum_sale.value;
+    const maximumCustomers = event.target.maximum_sale.value;
+    const averageCookies = event.target.avgerage_sale.value;
+
+    
+
+    const newLocation =new CookieShop(newStore, minimumCustomers, maximumCustomers, averageCookies);
+    
+    newLocation.render();
+    render1();
+newLocation.render1();
+  });
+
 
 
 

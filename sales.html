@@ -18,8 +18,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Stalinist+One&display=swap" rel="stylesheet">
                          
                       
+
+
                     </head>
-                    
+                   
                     <body id = "body">
                         
                          <header>
@@ -34,11 +36,34 @@
 
 
 
-                             
+                              
                                 
 
                         </main>
-                        
+                        <form id= "add-store">
+
+                         <fieldset id = "fl" >
+
+                           <legend id = "legend" >Add new store </legend>
+                           <label for="where">New Location :</label>
+                           <input name="where" type="text" size="30" placeholder="Where" required/>
+                     
+                          
+                     
+                           <label for="minimum_sale">Minimum</label>
+                           <input name="minimum_sale" type= "text" size="30" placeholder="Minimum sales per hour" required/>
+
+                           <label for="maximum_sale">Maximum</label>
+                           <input name="maximum_sale" type= "text" size="30" placeholder="Maximum sales per hour" required/>
+                     
+                           <label for="avgerage_sale">Average</label>
+                           <input name="avgerage_sale" type= "text" size="30" placeholder="Average sales per hour" required/>
+                     
+                           <button type="submit">Create new store</button>
+                     
+                         </fieldset>
+                         
+                       </form>
                          <footer id = "foot">
 
                               <a id = "footer1" href="index.html">Main Page !</a>
