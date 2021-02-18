@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
   body {
     background-color: #f3f3f3;
   }
@@ -81,6 +83,7 @@ text-shadow: 2px 2px lightgreen;
   #top2 {
     padding: 20px;
    margin: 20px;
+   
    
      }
      
@@ -188,8 +191,10 @@ padding: 20px;
   color: rgb(92, 102, 100);
   
   font-weight: bold;
-  font-size:large;
-  text-align: left;
+  font-size:x-large;
+  text-decoration: solid;
+
+  
 }
 
 footer h3 {
@@ -209,7 +214,11 @@ background-color: black;
 color: lightgreen;
 text-shadow:1px 1px lightyellow;
 font-size: x-large;
+
 }
+
+
+
 
 /* Sales page */
 
@@ -288,3 +297,13 @@ button{
   font-size:x-large;
 
 }
+
+
+#sec { 
+
+ 
+  border-radius: 5px;
+  background-color: #e09e67;
+  padding: 20px;
+}
+

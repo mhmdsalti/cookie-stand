@@ -78,12 +78,14 @@
   tr1El.appendChild(th5El);
   th5El.textContent = 'Daily Total';
     }
-
+    
+    const dom = document.getElementById('cookiesShop');
     function render1(){
-      const dom = document.getElementById('cookiesShop');
       const tr3El = document.createElement('tr');
       dom.appendChild(tr3El);
     
+      // tr3El.setAttribute('id', 'tr3El');
+
       const th6El = document.createElement('th');
       tr3El.appendChild(th6El);
       th6El.textContent = 'Totals';
@@ -106,8 +108,13 @@ tokyo.render();
 dubai.render();
 paris.render();
 lima.render();
+render1();
 
 
+
+
+// dom= document.getElementById('cookiesShop');
+// dom.parentNode.removeChild(tr3El);
 
 
 const newStore= [];
@@ -124,14 +131,21 @@ formEl.addEventListener('submit', function(event) {
     const maximumCustomers = event.target.maximum_sale.value;
     const averageCookies = event.target.avgerage_sale.value;
 
+
     
+    dom.deleteRow(-1);
 
     const newLocation =new CookieShop(newStore, minimumCustomers, maximumCustomers, averageCookies);
-    
+
+  
     newLocation.render();
+    
     render1();
-newLocation.render1();
+   
+    
   });
+  
+  
 
 
 
